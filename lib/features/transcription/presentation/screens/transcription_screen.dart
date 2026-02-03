@@ -401,8 +401,8 @@ class _TranscriptionScreenState extends ConsumerState<TranscriptionScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             _buildModelOption(WhisperModel.tiny, 'Tiny', '75 MB', 'Fastest', theme),
-            // _buildModelOption(WhisperModel.base, 'Base', '142 MB', 'Balanced', theme),
-            // _buildModelOption(WhisperModel.small, 'Small', '466 MB', 'Most Accurate', theme),
+            _buildModelOption(WhisperModel.base, 'Base', '142 MB', 'Balanced', theme),
+            _buildModelOption(WhisperModel.small, 'Small', '466 MB', 'Most Accurate', theme),
           ],
         ),
         actions: [
