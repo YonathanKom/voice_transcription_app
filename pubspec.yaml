@@ -1,0 +1,44 @@
+name: voice_transcription_app
+description: Production-grade offline-first voice transcription app using Whisper AI
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management (Riverpod 3.0)
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  
+  # Offline Whisper AI
+  whisper_ggml: ^1.7.0
+  
+  # Audio Recording
+  record: ^6.2.0
+  
+  # Permissions
+  permission_handler: ^12.0.1
+  
+  # Core Utilities
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  
+  # Code Generation
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.5.4
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/models/ggml-tiny.bin
+    # - assets/models/ggml-base.bin
+    # - assets/models/ggml-small.bin
