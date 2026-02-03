@@ -9,7 +9,7 @@ A Flutter application featuring offline-first voice transcription powered by Ope
 **AI Inference**: Whisper.cpp via GGML (hardware-accelerated, CoreML on iOS)
 **Audio**: 16kHz PCM WAV recording optimized for Whisper
 
-## 📦 Tech Stack (Gold Standard Feb 2026)
+## 📦 Tech Stack
 
 | Component | Library | Rationale |
 |-----------|---------|-----------|
